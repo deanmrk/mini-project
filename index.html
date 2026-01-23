@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Log in or Sign up</title>
+</head>
+<body>
+    <div class="form">
+        <div class="container">
+            <p class="textHeader">Create Account</p>
+            <div class="container-1">
+                <input class="name" type="text" placeholder="First name" required>
+                <input class="lastName" type="text" placeholder="Last name">
+                <input class="email" type="email" placeholder="Email" required unique>
+                <input class="password" type="password" placeholder="Password" required>
+            </div>
+            <div class="container-2">
+                <button onclick="addUser()" class="btnCreate">Create Account</button>
+            </div>
+            <div class="container-3">
+                <p class="text1">Already have an account? <a href="login.html">Log in</a></p>
+            </div>
+        </div>
+    </div>
+
+<script src="user.js"></script>
+</body>
+</html>

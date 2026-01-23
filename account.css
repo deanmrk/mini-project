@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body {
+    margin: 0%;
+    font-family: 'poppins', sans-serif;
+}
+
+.img-logo {
+    width: 43px;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.cart-img {
+    width: 30px;
+}
+
+nav {
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(243, 244, 245);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 0%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+a, li, ul {
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(101, 80, 121);
+    font-weight: 500;
+}
+
+li:hover {
+    color: black;
+    transition: .3s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(252, 248, 248);
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 400px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.btnLogout {
+    background-color: rgb(203, 70, 70);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.header-text {
+    margin: 0%;
+    padding: 3px;
+    color: rgb(66, 180, 225);
+}
+
+.pass {
+    color: red;
+}
