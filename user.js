@@ -1,16 +1,27 @@
 let users = JSON.parse(localStorage.getItem('data')) || [];
-
+let timeOutId;
 function addUser() {
     const getName = document.querySelector('.name');
     const getLastName = document.querySelector('.lastName');
     const getEmail = document.querySelector('.email');
     const getPassword = document.querySelector('.password');
+    const error = document.querySelector('.error-msg')
 
     const name = getName.value;
     const lastname = getLastName.value;
     const email = getEmail.value;
     const password = getPassword.value;
 
-    users.push({name, lastname, email, password});
-    localStorage.setItem('data', JSON.stringify(users));
+    if (!name || !lastname || !email || !password) {
+        timeOutId = setTimeout( () => {
+            error.innerHTML = 'Please fill all the blanks!'
+        }, 0)
+    }
+    else {
+        clearTimeout(timeOutId)
+        users.push({name, lastname, email, password});
+        alert('done')
+        localStorage.setItem('data', JSON.stringify(users));
+        window.location.href = 'login.html'
+    }
 }

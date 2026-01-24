@@ -69,3 +69,8 @@ a {
     padding: 8px;
     border-radius: 5px;
 }
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+}
