@@ -29,7 +29,7 @@ let products = [
     },
     {
         id: 5,
-        image: 'https://smhome.ph/cdn/shop/files/MASFLEX_204PC_20PRINTED_20MUG_20WITH_20RACK_2012OZ_20CS2_2012C_20-_2010434391_20-_201.jpg?v=1759806312',
+        image: 'https://m.media-amazon.com/images/I/61sXTBE4bFL.jpg',
         name: 'Ceramic Coffee Mug Set',
         price: 2499,
         about: 'Set of 4 handmade ceramic mugs'

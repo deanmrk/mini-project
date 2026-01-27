@@ -98,10 +98,31 @@ li:hover {
     background-color: rgb(147, 200, 221);
     padding: 7px;
     font-weight: 500;
-    transition: .3s ease-out;
+    transition: .2s ease-out;
     cursor: pointer;
 }
 .btnAddcart:hover {
     background-color: rgb(128, 200, 228);
+    transition: .3s ease-in-out;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-container p{
+    font-size: 15px;
+    transform: scale(1.2);
+}
+
+.addCart {
+    font-size: 8px;
+}
+.triggerAdd {
+    background-color: rgb(247, 184, 66);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: .3s ease-in-out;
 }

@@ -8,11 +8,9 @@ const getPassword = document.querySelector('.password')
 const temail = getEmail.value; 
 const tpassword = getPassword.value; 
 
-   const userData = users.find(data => {
-    
-
+   const userData = users.find(data =>
     data.email === temail && data.password === tpassword
-   }); //if i use bracket, it will become error, so i need to use a return
+   ); //if i use bracket, it will become error, so i need to use a return
     
 
    
@@ -35,8 +33,3 @@ const tpassword = getPassword.value;
     }
 
 }
-//LOGIN BUTTON
-const btnLogin = document.querySelector('.btnLogin');
-btnLogin.addEventListener('click', () => {
-    login();
-});

@@ -13,12 +13,9 @@ function addUser() {
     const password = getPassword.value;
 
     if (!name || !lastname || !email || !password) {
-        timeOutId = setTimeout( () => {
-            error.innerHTML = 'Please fill all the blanks!'
-        }, 0)
+        error.innerHTML = 'Please fill all the blanks!'
     }
     else {
-        clearTimeout(timeOutId)
         users.push({name, lastname, email, password});
         alert('done')
         localStorage.setItem('data', JSON.stringify(users));
