@@ -1,1 +1,5 @@
-const cart = [];
+export const cart = [];
+
+cart.forEach( product => {
+
+})
