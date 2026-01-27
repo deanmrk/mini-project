@@ -1,3 +1,6 @@
+import { cart } from "./cart.js";
+import { products } from "./product.js";
+
 const shopContainer = document.querySelector('.shop-container');
 const addCartBtn = document.querySelectorAll('.btnAddcart')
 
